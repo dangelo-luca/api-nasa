@@ -21,5 +21,9 @@ def home():
     
     return render_template('home.html') 
 
+@app.route('/cat/change', methods=['POST'])
+def cat_change():
+    return redirect(url_for('cat'))
+
 if __name__ == '__main__':
     app.run(debug=True)

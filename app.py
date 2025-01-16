@@ -16,7 +16,7 @@ def cat():
     data = response.json() #converte da json a dict python
     return render_template('cat_fact.html', fact=data.get("fact"))
 
-@app.route('/home')
+@app.route('/')
 def home():
     
     return render_template('home.html') 
